@@ -1,0 +1,34 @@
+/* =========================================
+SALAD CLUB!! A FUN JQUERY PROJECT
+BY LAURA-LOUISE TOBIN
+PROJECT #3 - HACKER YOU BOOTCAMP 2018
+============================================ */
+
+@import "setup";
+@import "var-mix";
+@import "utils";
+@import "typography";
+
+
+
+/* =========================================
+BASE STYLES
+============================================ */
+
+html{
+  font-size: 62.5%;
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+
+/* =========================================
+SECTION STYLES
+============================================ */
+
+@import "header";
+@import "main";
+@import "footer";
