@@ -6,17 +6,27 @@ TYPOGRAPHY STYLES
 
 $title: 'Passion One', cursive;
 $heading : 'Questrial', sans-serif;
+$cursive : 'Pacifico', cursive;
 $para: 'Raleway', sans-serif;
 
 
 /* ------------  BASE STYLES  ------------ */
 
 h1{
-
+font-family: $title;
 
 }
 
 h2{
-
+font-family: $cursive;
   
 }
+
+h3{
+font-family: $heading;
+
+}
+
+
+
+// SALAD CLUB HEADER STYLES -- FUN BOUNCE
