@@ -6,8 +6,8 @@ TYPOGRAPHY STYLES
 
 $title: 'Passion One', cursive;
 $heading : 'Questrial', sans-serif;
-$cursive : 'Pacifico', cursive;
-$para: 'Raleway', sans-serif;
+$cursive : 'Satisfy', cursive;
+$sans: 'Raleway', sans-serif;
 
 
 /* ------------  BASE STYLES  ------------ */
@@ -19,14 +19,77 @@ font-family: $title;
 
 h2{
 font-family: $cursive;
+font-size: 3rem;
   
 }
 
 h3{
 font-family: $heading;
+font-size: 2rem;
+}
 
+h4{
+  font-family: $cursive;
+}
+
+p{
+  font-family: $sans
+}
+
+
+// NAV
+
+nav ul{
+font-family: $sans;
+color: white;
+}
+
+// SALAD CLUB HEADER STYLES -- FUN BOUNCE
+
+.header__main{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 7.0rem;
+  position: relative;
+  color:white;
+  letter-spacing: 2;
+}
+
+.header__main-text{
+  position: relative;
+  z-index: 10;
+  margin: 20px 0;
+}
+
+.header__main-shadow{
+  color: cornflowerblue;
+  position: absolute;
+  left: 26px;
+  top: -83px;
+  z-index: 1;
+}
+
+.header__sub{
+  margin: 10px 0;
+  font-size: 4.0rem;
 }
 
 
 
-// SALAD CLUB HEADER STYLES -- FUN BOUNCE
+/* ------------  SALAD DISPLAY INFO  ------------ */
+
+.ingreds__info--text p{
+  margin: 10px 0px 10px 0px;
+  text-align: left;
+}
+
+.ingreds__info--title{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.ingreds__info--name{
+  font-size: 1.6rem;
+
+}

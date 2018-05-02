@@ -6,10 +6,6 @@ PROJECT #3 - HACKER YOU BOOTCAMP 2018
 
 @import "setup";
 @import "var-mix";
-@import "utils";
-@import "typography";
-
-
 
 /* =========================================
 BASE STYLES
@@ -24,11 +20,20 @@ img{
   display: block;
 }
 
+ul{
+  list-style: none;
+  
+}
+
 
 /* =========================================
 SECTION STYLES
 ============================================ */
 
-@import "header";
-@import "main";
-@import "footer";
+
+@import "typography";
+@import "utils";
+
+@import "components/header";
+@import "components/main";
+@import "components/footer";

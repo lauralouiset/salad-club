@@ -3,9 +3,31 @@ UTILITIES
 ============================================ */
 
 
-
 // Button Styles
 
 button{
-  
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-family: $sans;
+  text-transform: uppercase;
+  margin-bottom: 25px;
 }
+
+.btn-base{
+width: 28%;
+min-width: 50px;
+
+}
+
+.btn-base:active{
+  background-color: green;
+}
+
+.btn-mix{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+

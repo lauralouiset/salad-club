@@ -1,0 +1,98 @@
+/* =========================================
+SALAD CLUB TOP SECTION
+============================================ */
+
+main{
+  // height: 100vh;
+  background: url(../assets/bowl-bg-xl.jpg);
+  background-size: cover;
+  background-position: center bottom;
+
+}
+
+/* ------------  NAV BAR  ------------ */
+
+nav{
+  display: flex;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.header__nav{
+  display: flex;
+  justify-content: space-between;
+
+  ul li{
+    padding: 10px;
+  }
+}
+
+
+/* =========================================
+SALAD SECTION
+============================================ */
+
+
+.salad{
+  display:flex;
+}
+
+/* ------------  SALAD DISPLAY  ------------ */
+
+.salad__display,{
+  width: 60%;
+  border: 1px solid green;
+
+}
+
+.salad-base{
+  visibility:hidden;
+}
+
+.visible{
+  visibility: visible
+}
+
+
+/* ------------  SALAD INFO  ------------ */
+
+.salad__sidebar{
+  width: 40%;
+  border: 1px solid pink;
+  text-align: center;
+}
+
+.salad__info__base{
+  display:flex;
+  justify-content: space-around;
+}
+
+
+// SELECTED INGREDIENTS DISPLAY
+
+
+.salad__info--ingreds{
+  margin: 20px;
+  display:flex;
+  flex-flow: row wrap;
+}
+
+.ingreds__item{
+  // margin: 5px;
+  background: white;
+  width: 48%;
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+}
+
+.ingreds__img{
+  border: 1px solid black;
+  width: 75px;
+  height: 75px;
+
+
+}
+
+.ingreds__info--text{
+margin-left: 20px;
+}

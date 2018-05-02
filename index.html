@@ -5,125 +5,173 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Passion+One|Questrial|Raleway:400,600" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
   <link rel="scripts" href="scripts/scripts.js">
   <title>SALAD CLUB!</title>
 </head>
 <body>
   <div class="wrapper">
 
-    <header>
+    <main>
       <nav>
+        <ul class="header__nav">
+          <li>About</li>
+        </ul>
+
+        <ul class="socialmedia">
+          <li>Twitter</li>
+        </ul>
 
       </nav>
-      <div class="header__main">
-        <h1>Salad Club</h1>
-      </div>
 
-
-      <div class="header__text">
-        <h2>Salad Generator</h2>
-        <h3>Generate delicious, healthy salads with a single button!</h3>
-      </div>
-
-    </header>
-
-
-      <!-- SALAD DISPLAY -->
-      <section class="salad">
+      <!-- SALAD SECTION -->
+      <main class="salad">
 
 
         <!-- SALAD IMAGE DISPLAY -->
-        <div class="salad__display">
+        <section class="salad__display">
           <!-- images go here -->
+
+        <img class="salad-base" src="" alt="spring greens">
+        <img class="salad-base" src="" alt="baby kale">
+        <img class="salad-base" src="" alt="soba noodles">
+
+        </section>
+
+
+
+
+      <section class="salad__sidebar">
+
+                <div class="header__main">
+                  <h1 class="header__main-text">Salad Club</h1>
+                  <h1 class="header__main-shadow">Salad Club</h1>
+                </div>
+                
+                <h2 class="header__sub">Salad Generator</h2>
+                
+                <div class="header__tagline">
+                  <h3>Generate delicious, healthy salads with a single button!</h3>
+                </div>
+
+
+
+      <div class="salad__info">
+
+        <h2>Pick Your Base</h2>
+
+        <div class="salad__info__base">
+            <button type="button" class="btn-base">Spring Greens</button>
+            <button type="button" class="btn-base">Baby Kale</button>
+            <button type="button" class="btn-base">Soba Noodles</button>
+      </div>
+
+      <div class="salad__info--mix">
+        <h2>Click to generate your salad</h2>
+        <button type ="button" class="generate">Mix My Salad!</button>
+      </div>
+
+
+
+
+      <div class="salad__info--ingreds">
+
+        <div class="ingreds__item ingreds--protein">
+          <div class="ingreds__img ingreds__img--protein">
+            <img src="????" alt="????">
+          </div>
+
+          <div class="ingreds__info--text">
+            <p class="ingreds__info--title">Protein</p>
+            <p class="ingreds__info--name">Item Name</p>
+          </div>
         </div>
 
 
-
-
-        <div class="salad__info">
-
-          <div class="salad__info--pickBase">
-            <h4><span class="step">First</span> Pick Your Base</h4>
-            <button type="button" class="base-btn">Spring Greens</button>
-            <button type="button" class="base-btn">Baby Kale</button>
-            <button type="button" class="base-btn">Soba Noodles</button>
+        <div class="ingreds__item ingreds--vegOne">
+          <div class="ingreds__img ingreds__img--vegOne">
+            <img src="????" alt="????">
           </div>
-
-          <div class="salad__info--mix">
-            <h4>Click to generate your salad</h4>
-            <button type ="button" class="generate">Mix My Salad!</button>
+        
+          <div class="ingreds__info--text">
+            <p class="ingreds__info--title">Vegetable One</p>
+            <p class="ingreds__info--name">Item Name</p>
           </div>
+        </div>
 
-          <div class="div salad__info--ingredientsContainer">
-            <div class="ingredients__item info__ingredients--protein">
-              <div class="ingredients__preview ingredients__preview--protein"></div>
-              <h5>Protein</h5>
-              <h4> Item Name</h4>
-            </div>
-
-            <div class="ingredients__item info__ingredients--veggieOne">
-              <div class="ingredients__preview ingredients__preview--veggieOne"></div>
-              <h5>Vegetable</h5>
-              <h4>Item Name</h4>
-            </div>
-
-            <div class="ingredients__item info__ingredients--veggieTwo">
-              <div class="ingredients__preview ingredients__preview--veggieTwo"></div>
-              <h5>Vegetable</h5>
-              <h4>Item Name</h4>
-            </div>
-
-            <div class="ingredients__item info__ingredients--veggieThree">
-              <div class="ingredients__preview ingredients__preview--veggieThree"></div>
-              <h5>Vegetable</h5>
-              <h4>Item Name</h4>
-            </div>
-
-            <div class="ingredients__item info__ingredients--crunch">
-              <div class="ingredients__preview ingredients__preview--crunch"></div>
-              <h5>Tasty Crunch</h5>
-              <h4>Item Name</h4>
-
-            </div>
-
-            <div class="ingredients__item info__ingredients--dressing">
-              <div class="ingredients__preview ingredients__preview--dressing"></div>
-              <h5>Dressing</h5>
-              <h4>Item Name</h4>
-            </div>
-
-          </div> <!-- ingredientsContainer ends -->
-
+        <div class="ingreds__item ingreds--vegTwo">
+          <div class="ingreds__img ingreds__img--vegTwo">
+            <img src="????" alt="????">
+          </div>
+        
+          <div class="ingreds__info--text">
+            <p class="ingreds__info--title">Vegetable Two</p>
+            <p class="ingreds__info--name">Item Name</p>
+          </div>
         </div>
 
 
+        <div class="ingreds__item ingreds--vegThree">
+          <div class="ingreds__img ingreds__img--vegThree">
+            <img src="????" alt="????">
+          </div>
+        
+          <div class="ingreds__info--text">
+            <p class="ingreds__info--title">Vegetable Three</p>
+            <p class="ingreds__info--name">Item Name</p>
+          </div>
+        </div>
 
+        <div class="ingreds__item ingreds--crunch">
+          <div class="ingreds__img ingreds__img--crunch">
+            <img src="????" alt="????">
+          </div>
+        
+          <div class="ingreds__info--text">
+            <p class="ingreds__info--title">Crunch</p>
+            <p class="ingreds__info--name">Item Name</p>
+          </div>
+        </div>
 
+        <div class="ingreds__item ingreds--dressing">
+          <div class="ingreds__img ingreds__img--dressing">
+            <img src="????" alt="????">
+          </div>
+        
+          <div class="ingreds__info--text">
+            <p class="ingreds__info--title">Dressing</p>
+            <p class="ingreds__info--name">Item Name</p>
+          </div>
+        </div>
+
+      </div> <!-- ingredientsContainer ends -->
+
+      </div> <!-- salad info ends -->
 
       </section>
 
+      </main>
 
       <!-- NUTRITIONAL INFORMATION -->
       <section class="nutrition">
 
 
-
-
-        
         <p>* Percent Daily Values are based on a 2000 calorie diet. Your daily values may be higher or lower depending on your calorie
         needs.</p>
       </section>
 
 
-      <!-- SOMETHING ELSE?? ??? -->
-      <section class="somethingElse">
+<footer>
+Built by Laura-Louise Tobin
 
-
-
-      </section>
+</footer>
 
     </div>  <!-- wrapper end -->
 
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<script src="scripts/scripts.js"></script>
 </body>
 </html>
