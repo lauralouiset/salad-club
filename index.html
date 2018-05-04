@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="assets/icon-salad.png">
   <link href="https://fonts.googleapis.com/css?family=Passion+One|Questrial|Raleway:400,600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
@@ -31,18 +32,23 @@
 
         <!-- SALAD IMAGE DISPLAY -->
         <section class="salad__display">
-          <!-- images go here -->
+				
+					<!-- images go here -->
+					<div class="salad-bowl">
+						<img class="img-bowl" src="assets/bowl.png" alt="Empty Salad Bowl">
 
-        <img class="salad-base" src="" alt="spring greens">
-        <img class="salad-base" src="" alt="baby kale">
-        <img class="salad-base" src="" alt="soba noodles">
+
+						<img data-base="greens" class="img-salad-base" src="assets/ingredients/greens.png" alt="spring greens">
+						<img data-base="kale" class="img-salad-base" src="" alt="baby kale">
+						<img data-base="soba" class="img-salad-base" src="" alt="soba noodles">
+				</div>
 
         </section>
 
 
 
 
-      <section class="salad__sidebar">
+      <section class="salad__content">
 
                 <div class="header__main">
                   <h1 class="header__main-text">Salad Club</h1>
@@ -61,10 +67,10 @@
 
         <h2>Pick Your Base</h2>
 
-        <div class="salad__info__base">
-            <button type="button" class="btn-base">Spring Greens</button>
-            <button type="button" class="btn-base">Baby Kale</button>
-            <button type="button" class="btn-base">Soba Noodles</button>
+        <div class="salad__base">
+            <button type="button" data-base="greens" class="btn-base">Spring Greens</button>
+            <button type="button" data-base="kale" class="btn-base">Baby Kale</button>
+            <button type="button" data-base="soba" class="btn-base">Soba Noodles</button>
       </div>
 
       <div class="salad__info--mix">
@@ -77,71 +83,78 @@
 
       <div class="salad__info--ingreds">
 
+        <!-- PROTEIN-->
         <div class="ingreds__item ingreds--protein">
           <div class="ingreds__img ingreds__img--protein">
-            <img src="????" alt="????">
+            <img src="" alt="????">
           </div>
 
-          <div class="ingreds__info--text">
-            <p class="ingreds__info--title">Protein</p>
-            <p class="ingreds__info--name">Item Name</p>
+          <div class="ingreds__info--text ingreds__info--text--protein">
+            <p class="ingreds__info--title ingreds__info--title">Protein</p>
+            <p class="ingreds__info--name ingreds__info--name--protein">
+            </p>
+
           </div>
         </div>
 
-
-        <div class="ingreds__item ingreds--vegOne">
-          <div class="ingreds__img ingreds__img--vegOne">
-            <img src="????" alt="????">
+        <!-- VEGETABLE ONE -->
+        <div class="ingreds__item ingreds--veg1">
+          <div class="ingreds__img">
+            <img class="ingreds__img--veg1" src="????" alt="????">
           </div>
         
-          <div class="ingreds__info--text">
-            <p class="ingreds__info--title">Vegetable One</p>
-            <p class="ingreds__info--name">Item Name</p>
+          <div class="ingreds__info--text ingreds__info--text--veg1">
+            <p class="ingreds__info--title ingreds__info--title--veg1">Vegetable One</p>
+            <p class="ingreds__info--name ingreds__info--name--veg1"></p>
           </div>
         </div>
 
-        <div class="ingreds__item ingreds--vegTwo">
-          <div class="ingreds__img ingreds__img--vegTwo">
-            <img src="????" alt="????">
+
+        <!-- VEGETABLE TWO -->
+        <div class="ingreds__item ingreds--veg2">
+          <div class="ingreds__img">
+            <img class="ingreds__img--veg2" src="????" alt="????">
           </div>
         
-          <div class="ingreds__info--text">
-            <p class="ingreds__info--title">Vegetable Two</p>
-            <p class="ingreds__info--name">Item Name</p>
+          <div class="ingreds__info--text ingreds__info--veg2">
+            <p class="ingreds__info--title ingreds__info--title--veg2">Vegetable</p>
+            <p class="ingreds__info--name ingreds__info--name--veg2"></p>
           </div>
         </div>
 
-
-        <div class="ingreds__item ingreds--vegThree">
-          <div class="ingreds__img ingreds__img--vegThree">
-            <img src="????" alt="????">
+        <!-- VEGETABLE THREE -->
+        <div class="ingreds__item ingreds--veg3">
+          <div class="ingreds__img ">
+            <img class="ingreds__img--veg3" src="????" alt="????">
           </div>
         
-          <div class="ingreds__info--text">
-            <p class="ingreds__info--title">Vegetable Three</p>
-            <p class="ingreds__info--name">Item Name</p>
+          <div class="ingreds__info--text ingreds__info--text--veg3">
+            <p class="ingreds__info--title ngreds__info--title--veg3">Vegetable Three</p>
+            <p class="ingreds__info--name ingreds__info--name--veg3"></p>
           </div>
         </div>
 
+        <!-- CRUNCH -->
         <div class="ingreds__item ingreds--crunch">
           <div class="ingreds__img ingreds__img--crunch">
             <img src="????" alt="????">
           </div>
         
-          <div class="ingreds__info--text">
+          <div class="ingreds__info--text ingreds__info--text--crunch">
             <p class="ingreds__info--title">Crunch</p>
-            <p class="ingreds__info--name">Item Name</p>
+            <p class="ingreds__info--name ingreds__info--name--crunch"></p>
           </div>
         </div>
 
+        <!-- DRESSING -->
         <div class="ingreds__item ingreds--dressing">
           <div class="ingreds__img ingreds__img--dressing">
-            <img src="????" alt="????">
+            <img class src="????" alt="????">
           </div>
         
-          <div class="ingreds__info--text">
+          <div class="ingreds__info--text ingreds__info--text--dressing">
             <p class="ingreds__info--title">Dressing</p>
-            <p class="ingreds__info--name">Item Name</p>
+            <p class="ingreds__info--name ingreds__info--name--dressing"></p>
           </div>
         </div>
 
@@ -172,6 +185,7 @@ Built by Laura-Louise Tobin
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
+<script src="scripts/salad-object.js"></script>
 <script src="scripts/scripts.js"></script>
 </body>
 </html>

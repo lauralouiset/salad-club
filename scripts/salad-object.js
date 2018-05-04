@@ -3,13 +3,15 @@
 // 
 
 
-// GREENS
 
-const salad = {
-
+const saladFixins = {
+	
+	// GREENS
 	saladBase: [
 							{
 								name: "Spring Greens",
+								image: `assets/ingredients/base/greens`,
+								alt: "Bed of spring greens",
 								imageNumber: 1,
 								servingSize: "1 1/2 cups",
 								calories: 8,
@@ -92,7 +94,8 @@ const salad = {
 
 							{
 								name: "Brown Lentils",
-								imageNumber: 12,
+								imageNumber: 4,
+								image: "lentils.png",
 								servingSize: "1/4 cup",
 								calories: 80,
 								protein: 10,
@@ -337,7 +340,7 @@ const salad = {
 
 							{
 								name: "Cucumber",
-								imageNumber: x,
+								imageNumber: 4,
 								servingSize: "1/2 cup chopped",
 								calories: 6,
 								protein: 0,
@@ -517,7 +520,9 @@ const salad = {
 
 							{
 								name: "Fresh Peas",
-								imageNumber: 9,
+								image: `pea.png`,
+								alt: `Fresh green peas`,
+								imageNumber: 12,
 								servingSize: "1/3 cup",
 								calories: 118,
 								protein: 8,
@@ -588,7 +593,7 @@ const salad = {
 								fiber: 1,
 								fat: 5,
 								cholesterol: 15,
-								sodium: 940 mg,
+								sodium: 940,
 								potassium: 0,
 								sugar: 2,
 								vitaminA: 30,
@@ -665,103 +670,103 @@ const salad = {
 								{
 									name: "Balsamic Vinaigrette",
 									imageNumber: 1,
-									servingSize: "x tbsp",
-									calories: x,
-									protein: x,
-									carbs: x,
-									fiber: x,
-									fat: x,
-									cholesterol: x,
-									sodium: x,
-									potassium: x,
-									sugar: x,
-									vitaminA: x,
-									vitaminC: x,
-									calcium: x,
-									iron: x,
-									link: "https://www.myfitnesspal.com/food/calories/445764677"
+									servingSize: "3 tbsp",
+									calories: 134,
+									protein: 0,
+									carbs: 3,
+									fiber: 0,
+									fat: 14,
+									cholesterol: 0,
+									sodium: 336,
+									potassium: 0,
+									sugar: 2,
+									vitaminA: 0,
+									vitaminC: 0,
+									calcium: 0,
+									iron: 0,
+									link: "http://www.geniuskitchen.com/recipe/sheilas-best-balsamic-dressing-176016"
 								},
 
 								{
 									name: "Ranch",
 									imageNumber: 1,
-									servingSize: "x tbsp",
-									calories: x,
-									protein: x,
-									carbs: x,
-									fiber: x,
-									fat: x,
-									cholesterol: x,
-									sodium: x,
-									potassium: x,
-									sugar: x,
-									vitaminA: x,
-									vitaminC: x,
-									calcium: x,
-									iron: x,
-									link: "https://www.myfitnesspal.com/food/calories/445764677"
+									servingSize: "3 tbsp",
+									calories: 91,
+									protein: 1,
+									carbs: 2,
+									fiber: 0,
+									fat: 9,
+									cholesterol: 7.4,
+									sodium: 70.2,
+									potassium: 19.9,
+									sugar: 1,
+									vitaminA: 2,
+									vitaminC: 0,
+									calcium: 3,
+									iron: 0,
+									link: "https://recipes.sparkpeople.com/recipe-calories.asp?recipe=3026336"
 								},
 
 
 								{
 									name: "Raspberry Vinaigrette",
 									imageNumber: 1,
-									servingSize: "x tbsp",
-									calories: x,
-									protein: x,
-									carbs: x,
-									fiber: x,
-									fat: x,
-									cholesterol: x,
-									sodium: x,
-									potassium: x,
-									sugar: x,
-									vitaminA: x,
-									vitaminC: x,
-									calcium: x,
-									iron: x,
-									link: "https://www.myfitnesspal.com/food/calories/445764677"
+									servingSize: "3 tbsp",
+									calories: 90,
+									protein: 0,
+									carbs: 10.5,
+									fiber: 0,
+									fat: 6,
+									cholesterol: 0,
+									sodium: 390,
+									potassium: 30,
+									sugar: 9,
+									vitaminA: 0,
+									vitaminC: 0,
+									calcium: 0,
+									iron: 0,
+									link: "https://www.eatthismuch.com/food/view/raspberry-vinaigrette-dressing,100943/"
 								},
 
 
 								{
 									name: "Green Goddess",
 									imageNumber: 1,
-									servingSize: "x tbsp",
-									calories: x,
-									protein: x,
-									carbs: x,
-									fiber: x,
-									fat: x,
-									cholesterol: x,
-									sodium: x,
-									potassium: x,
-									sugar: x,
-									vitaminA: x,
-									vitaminC: x,
-									calcium: x,
-									iron: x,
-									link: "https://www.myfitnesspal.com/food/calories/445764677"
+									servingSize: "2 tbsp",
+									calories: 96,
+									protein: 6,
+									carbs: 4,
+									fiber: 1,
+									fat: 8,
+									cholesterol: 0,
+									sodium: 205,
+									potassium: 162.5,
+									sugar: 1,
+									vitaminA: 10,
+									vitaminC: 23,
+									calcium: 10,
+									iron: 8,
+									link: "https://recipes.sparkpeople.com/recipe-calories.asp?recipe=3253970"
 								},
 
 								{
 									name: "Lemon Tahini",
 									imageNumber: 1,
-									servingSize: "x tbsp",
-									calories: x,
-									protein: x,
-									carbs: x,
-									fiber: x,
-									fat: x,
-									cholesterol: x,
-									sodium: x,
-									potassium: x,
-									sugar: x,
-									vitaminA: x,
-									vitaminC: x,
-									calcium: x,
-									iron: x,
-									link: "https://www.myfitnesspal.com/food/calories/445764677"
+									servingSize: "3 tbsp",
+									calories: 75,
+									protein: 2,
+									carbs: 4,
+									fiber: 1,
+									fat: 6.5,
+									cholesterol: 0,
+									sodium: 18,
+									potassium: 75,
+									sugar: 1,
+									vitaminA: 3,
+									vitaminC: 13,
+									calcium: 5,
+									iron: 6,
+									link: "https://recipes.sparkpeople.com/recipe-calories.asp?recipe=1383969"
 								}
 ]
 

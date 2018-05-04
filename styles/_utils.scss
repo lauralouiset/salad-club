@@ -15,13 +15,14 @@ button{
 }
 
 .btn-base{
-width: 28%;
-min-width: 50px;
+  width: 150px;
+  background-color: green;
 
 }
 
 .btn-base:active{
-  background-color: green;
+  background: darkgreen;
+  transition: background .3s ease-in-out
 }
 
 .btn-mix{

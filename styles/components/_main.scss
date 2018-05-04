@@ -4,9 +4,9 @@ SALAD CLUB TOP SECTION
 
 main{
   // height: 100vh;
-  background: url(../assets/bowl-bg-xl.jpg);
+  background: url(../assets/background-wood.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom;
 
 }
 
@@ -39,35 +39,52 @@ SALAD SECTION
 /* ------------  SALAD DISPLAY  ------------ */
 
 .salad__display,{
-  width: 60%;
+  width: 50%;
   border: 1px solid green;
-
 }
 
-.salad-base{
-  visibility:hidden;
+.salad-bowl{
+	position: relative;
+}
+
+.img-bowl{
+	width: 100%;
+	position: absolute;
+	z-index: 3
+}
+
+.img-salad-base{
+	position:absolute;
+	width: 90%;
+	height: auto;
+	visibility:hidden;
+	z-index: 5;
 }
 
 .visible{
   visibility: visible
 }
 
+.displayOnSalad{
+	position: absolute;
+	z-index: 50;
+	width: 30px;
+}
 
 /* ------------  SALAD INFO  ------------ */
 
-.salad__sidebar{
-  width: 40%;
+.salad__content{
+  width: 50%;
   border: 1px solid pink;
   text-align: center;
 }
 
-.salad__info__base{
+.salad__base{
   display:flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-
-// SELECTED INGREDIENTS DISPLAY
+// SELECTED INGREDIENTS 
 
 
 .salad__info--ingreds{
@@ -88,7 +105,12 @@ SALAD SECTION
 .ingreds__img{
   border: 1px solid black;
   width: 75px;
-  height: 75px;
+	height: 75px;
+	& img{
+		width: 100%;
+		height: auto;
+	}
+
 
 
 }
