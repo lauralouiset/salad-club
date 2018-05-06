@@ -11,7 +11,6 @@ const saladFixins = {
 							{
 								name: "Spring Greens",
 								image: `assets/ingredients/base/greens`,
-								alt: "Bed of spring greens",
 								imageNumber: 1,
 								servingSize: "1 1/2 cups",
 								calories: 8,
@@ -221,6 +220,7 @@ const saladFixins = {
 							{
 								name: "Mushrooms",
 								imageNumber: 6,
+								image: "mushroom.png",
 								servingSize: "4 large",
 								calories: 20,
 								protein: 3,
@@ -361,7 +361,8 @@ const saladFixins = {
 							{
 								name: "Carrot",
 								imageNumber: 5,
-								servingSize: "1/4 cup ",
+								image: "carrot.png",
+								servingSize: "1/4 cup",
 								calories: 13,
 								protein: 0,
 								carbs: 3,
@@ -396,26 +397,6 @@ const saladFixins = {
 								calcium: 2,
 								iron: 7,
 								link: "https://www.myfitnesspal.com/food/calories/672006926"
-							},
-
-							{
-								name: "Mandarin Orange",
-								imageNumber: 5,
-								servingSize: "1/4 cup",
-								calories: 35,
-								protein: 0,
-								carbs: 10,
-								fiber: 1,
-								fat: 0,
-								cholesterol: 0,
-								sodium: 0,
-								potassium: 0,
-								sugar: 8,
-								vitaminA: 3,
-								vitaminC: 50,
-								calcium: 1,
-								iron: 0,
-								link: "https://www.myfitnesspal.com/food/calories/524740473"
 							},
 
 							{
@@ -521,7 +502,6 @@ const saladFixins = {
 							{
 								name: "Fresh Peas",
 								image: `pea.png`,
-								alt: `Fresh green peas`,
 								imageNumber: 12,
 								servingSize: "1/3 cup",
 								calories: 118,

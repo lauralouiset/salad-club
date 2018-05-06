@@ -2,18 +2,9 @@
 // SCRIPTS FOR SALAD CLUB
 // 
 
-// IMAGE DISPLAY
-
-// for salad item,  retrieve item.imageNumber to get number of times to clone image.
-// position each iteration absolute, 
-// top: random number between top of salad and bottom of salad
-// left: random number between left of salad and right of salad.
-// transform: rotate(Xdeg) - rotates image a random number between 180deg and -180deg.
 
 // display dressing inside dressing container
 
-
-//checkboxes superimposed overtop of salad items to select which items get remixed
 
 // FUNCTIONS
 salad = {}
@@ -26,24 +17,40 @@ salad.getRandomItem = (array) => {
 		index: random
 	};
 }
+
+
 // get random protein
 salad.getProtein = () => {
-  const proteinReturned = salad.getRandomItem(saladFixins.proteins);
+	const proteinReturned = salad.getRandomItem(saladFixins.proteins);
+	// displays name
 	$('.ingreds__info--name--protein').html(`${proteinReturned.item.name}`);
+	//displays preview image
+	$(`.ingreds__img--protein`).attr(`src`, `assets/ingredients/preview/${proteinReturned.item.image}`);
+	// displays on salad
 	salad.displayOnSalad(proteinReturned.item);
+	salad.updateNutrition(proteinReturned.item);
 } 
 
 // get crunch
 salad.getCrunch = () => {
   const crunchReturned = salad.getRandomItem(saladFixins.crunch);
-  $('.ingreds__info--name--crunch').html(`${crunchReturned.item.name}`);
+	$('.ingreds__info--name--crunch').html(`${crunchReturned.item.name}`);
+	$(`.ingreds__img--crunch`).attr(`src`, `assets/ingredients/preview/${crunchReturned.item.image}`);
+	salad.displayOnSalad(crunchReturned.item);
+
+	salad.updateNutrition(crunchReturned.item);
+
 } 
 
 // get dressing
 salad.getDressing = () => {
   const dressingReturned = salad.getRandomItem(saladFixins.dressings);
 	$('.ingreds__info--name--dressing').html(`${dressingReturned.item.name}`);
+
+	$(`.ingreds__img--dressing`).attr(`src`, `assets/ingredients/preview/${dressingReturned.item.image}`);
+	salad.updateNutrition(dressingReturned.item);
 } 
+
 
 // get veggies
 salad.getVeg = () => {
@@ -55,18 +62,20 @@ salad.getVeg = () => {
 		availableVeg.splice(vegReturned.index, 1);
 
 		salad.displayOnSalad(vegReturned.item);
+		salad.updateNutrition(vegReturned.item);
+
   }
 }
 
-// ROTATE AND DISPLAY PHOTO
+// ON-SALAD IMAGE DISPLAYS
 
 salad.displayOnSalad = (object) => {
 	const randomX = () => {
-		x = Math.floor((Math.random() * 600) + 150);
+		x = Math.floor((Math.random() * 50) + 25);
 		return x;
-	} 2
+	} 
 	const randomY = () => {
-		y = Math.floor((Math.random() * 600) + 150);
+		y = Math.floor((Math.random() * 50) + 25);
 		return y;
 	} 
 	const randomRotate = () => {
@@ -75,48 +84,89 @@ salad.displayOnSalad = (object) => {
 	}
 
 	for(i = 0; i < object.imageNumber; i++){
-		$('.salad-bowl').append(`<img class="displayOnSalad" src="assets/ingredients/${object.image}" alt="${object.name}" style="top:${randomY()}px; left: ${randomX()}px; transform:rotate(${randomRotate()}deg);">`);
+
+		$('.salad-ingredients').append(`<img class="displayOnSalad" src="assets/ingredients/${object.image}" alt="${object.name}" style="top:${randomY()}%; left: ${randomX()}%; transform:rotate(${randomRotate()}deg);">`);
 	}
+} 
+
+// ADD UP NUTRITIONAL INFORMATION
+
+salad.saladNutrition = {
+calories: 0,
+protein: 0,
+carbs: 0,
+fiber: 0,
+fat: 0,
+sugar: 0,
+cholesterol: 0,
+sodium: 0,
+potassium: 0,
+vitaminA: 0,
+vitaminC: 0,
+calcium: 0,
+iron: 0
+}
+
+salad.resetSalad = () => {
+
+	//reset graphics on salad display
+	$('.salad-ingredients').html("");
+
+	for(key in salad.saladNutrition){
+		salad.saladNutrition[key] = 0;
+		} 
+}
+
+// updates nutrition object and prints to page in table
+salad.updateNutrition = (item) => {
+	console.log(item);
+	for (key in salad.saladNutrition){
+		salad.saladNutrition[key] += item[key];
+		$(`.input__${key}`).html(salad.saladNutrition[key]);
+	}
+} 
+
+salad.init = () => {
+
+	// SELECT SALAD BASE BUTTON
+
+	$('.btn-base').on('click', function (e) {
+		e.preventDefault();
+		// Remove class of "visible" off all salad bases
+		$('.img-salad-base').removeClass('visible');
+		const base = $(this).data("base");
+		$(`img[data-base="${base}"]`).addClass('visible');
+	});
+
+	// GENERATE SALAD BUTTON
+	$('.generate').on('click', function (e) {
+		e.preventDefault();
+
+		//reset salad info & display
+		salad.resetSalad();
+
+		//generate new salad
+		salad.getProtein();
+		salad.getCrunch();
+		salad.getDressing();
+		salad.getVeg();
+
+
+		
+		// write function generating new array with current salad ingredients
+	});
 
 } 
+
+
+
+// PREPOPULATED TWEET
+//https://twitter.com/intent/tweet?text=I+made+a+to+make+a+prepopulate+Twitter+status+thanks+to+@younoodle+younoodle.com+%23fun
 
 
 // DOCUMENT READY
 $(function () {
 
-    // SELECT SALAD BASE BUTTON
-
-    $('.btn-base').on('click', function(e){
-			e.preventDefault();
-			// Remove class of "visible" off all salad bases
-			$('.img-salad-base').removeClass('visible');
-			const base = $(this).data("base");
-			$(`img[data-base="${base}"]`).addClass('visible');
-    });
-
-
-
-    // GENERATE SALAD BUTTON
-    $('.generate').on('click', function(e){
-      e.preventDefault();
-
-      salad.getProtein();
-      salad.getCrunch();
-      salad.getDressing();
-      salad.getVeg();
-
-
-			// TOGGLE SALAD ITEM IMAGES
-
-			
-
-			// CHECKBOXES
-
-
-    });
-// END OF GENERATE BUTTON
-
-
-
+	salad.init();
 
 });

@@ -1,0 +1,22 @@
+/* =========================================
+VARIABLES AND MIXINS
+============================================ */
+
+
+
+@mixin centerXY{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin sp-btw{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+/* ------------  RESPONSIVE MIXINS  ------------ */
+

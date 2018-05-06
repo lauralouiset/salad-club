@@ -3,7 +3,7 @@ SALAD CLUB TOP SECTION
 ============================================ */
 
 main{
-  // height: 100vh;
+  height: 100vh;
   background: url(../assets/background-wood.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,26 +39,39 @@ SALAD SECTION
 /* ------------  SALAD DISPLAY  ------------ */
 
 .salad__display,{
-  width: 50%;
-  border: 1px solid green;
+	width: 50%;
+	position: relative;
+	@include centerXY;
 }
 
 .salad-bowl{
 	position: relative;
+	border: 1px solid hotpink;
+	padding: 30px;
 }
 
 .img-bowl{
 	width: 100%;
-	position: absolute;
-	z-index: 3
 }
 
 .img-salad-base{
 	position:absolute;
-	width: 90%;
-	height: auto;
+	top:5%;
+	left: 5%;
+	width: 80%;
 	visibility:hidden;
 	z-index: 5;
+}
+
+.salad-ingredients{
+	width: 80%;
+	z-index: 10;
+	top: 0;
+	img{
+		position: absolute;
+		width: 5%;
+		height: auto;
+	}
 }
 
 .visible{
@@ -75,7 +88,6 @@ SALAD SECTION
 
 .salad__content{
   width: 50%;
-  border: 1px solid pink;
   text-align: center;
 }
 
@@ -110,9 +122,6 @@ SALAD SECTION
 		width: 100%;
 		height: auto;
 	}
-
-
-
 }
 
 .ingreds__info--text{

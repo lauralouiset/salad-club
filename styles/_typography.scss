@@ -52,22 +52,12 @@ color: white;
   font-size: 7.0rem;
   position: relative;
   color:white;
-  letter-spacing: 2;
+  letter-spacing: 2px;
 }
 
 .header__main-text{
-  position: relative;
-  z-index: 10;
-  margin: 20px 0;
-}
-
-.header__main-shadow{
-  color: cornflowerblue;
-  position: absolute;
-  z-index: 1;
-  left: 20%;
-  top: -50%;
-
+	margin: 20px 0;
+	text-shadow: 5px 5px 5px cornflowerblue;
 }
 
 .header__sub{
@@ -93,4 +83,23 @@ color: white;
 .ingreds__info--name{
   font-size: 1.6rem;
 
+}
+
+
+
+/* ------------  NUTRITION SECTION  ------------ */
+
+//NUTRITION DISPLAY GRID
+
+.nutrient{
+	font-weight: 700;
+}
+
+
+
+/* ------------  FOOTER  ------------ */
+
+footer{
+	color: white;
+	font-family: $sans;
 }

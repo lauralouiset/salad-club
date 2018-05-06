@@ -1,0 +1,50 @@
+/* =========================================
+NUTRITION
+============================================ */
+
+.about{
+	display: flex;
+	background-color: wheat;
+	padding: 30px;
+
+}
+
+.about__nutrition{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nutrition__display{
+	border: 3px solid black;
+	padding: 5px;
+	background: white;
+	width: 60%;
+
+}
+
+.nutrient__line{
+	@include sp-btw;
+	border-bottom: 1px solid black;
+	margin: 0;
+	padding: 5px;
+}
+
+.thinBorder{
+	border-bottom: 1px solid black;
+}
+
+.medBorder{
+	border-bottom: 3px solid black;
+
+}
+
+.thickBorder{
+	border-bottom: 5px solid black;
+}
+
+
+.nutrition__left{
+	width: 50%;
+}

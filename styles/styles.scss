@@ -22,7 +22,7 @@ img{
 
 ul{
   list-style: none;
-  
+  // REMOVE PADDING FOR MOZ AND WEBKIT
 }
 
 
@@ -36,4 +36,5 @@ SECTION STYLES
 
 @import "components/header";
 @import "components/main";
+@import "components/nutrition";
 @import "components/footer";
