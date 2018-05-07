@@ -43,13 +43,14 @@ p{
   text-align: center;
   text-transform: uppercase;
   color:white;
-  letter-spacing: 2px;
+	letter-spacing: 2px;
+	line-height: 1;
 }
 
 .header__main-text{
-	margin: 30px 0;
+	margin: 30px 0 10px;
 	text-shadow: 10px 10px 2px cornflowerblue;
-	font-size: 15.0rem;
+	font-size: 14.0rem;
 	letter-spacing: 10px;
 }
 

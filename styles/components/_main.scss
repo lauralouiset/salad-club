@@ -8,7 +8,10 @@ SALAD CLUB TOP SECTION
   background: url(../assets/background-wood.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
-	  display:flex;
+	display:flex;
+	@include mq(med){
+		flex-flow: column nowrap;
+	}
 
 }
 
@@ -18,6 +21,11 @@ SALAD CLUB TOP SECTION
 	width: 50%;
 	position: relative;
 	@include centerXY;
+	@include mq(med){
+		width: 90%;
+		order: 2;
+		margin: 0 auto;
+	}
 }
 
 .salad-bowl{
@@ -45,7 +53,7 @@ SALAD CLUB TOP SECTION
 	top: 0;
 	img{
 		position: absolute;
-		width: 5%;
+		width: 8%;
 		height: auto;
 	}
 }
@@ -67,6 +75,11 @@ SALAD CLUB TOP SECTION
 	@include centerXY;
 	flex-flow: column nowrap;
 	text-align: center;
+
+	@include mq(med){
+		width: 100%;
+		order: 1;
+	}
 }
 
 .salad__base__buttons{

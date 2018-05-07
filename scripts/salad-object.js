@@ -47,25 +47,6 @@ const saladFixins = {
 								iron: 6,
 								link: "https://www.myfitnesspal.com/food/calories/654272933"
 							},
-							{
-								name: "Soba Noodles",
-								imageNumber: 1,
-								servingSize: "1 cup",
-								calories: 113,
-								protein: 6,
-								carbs: 24,
-								fiber: 0,
-								fat: 0,
-								cholesterol: 0,
-								sodium: 68,
-								potassium: 40,
-								sugar: 0,
-								vitaminA: 0,
-								vitaminC: 0,
-								calcium: 0,
-								iron: 3,
-								link: "https://www.myfitnesspal.com/food/calories/445764677"
-							}
 	],
 
 	// PROTEINS
@@ -74,6 +55,7 @@ const saladFixins = {
 							{
 								name: "Black Beans",
 								imageNumber: 1,
+								image: `black-bean.png`,
 								servingSize: "1/4 cup",
 								calories: 57,
 								protein: 4,
@@ -94,7 +76,7 @@ const saladFixins = {
 							{
 								name: "Brown Lentils",
 								imageNumber: 4,
-								image: "lentils.png",
+								image: "lentil.png",
 								servingSize: "1/4 cup",
 								calories: 80,
 								protein: 10,
@@ -112,29 +94,30 @@ const saladFixins = {
 								link: "https://www.myfitnesspal.com/food/calories/614695651"
 							},
 
-							{
-								name: "Grilled Shrimp",
-								imageNumber: 6,
-								servingSize: "5 shrimp / 2 oz",
-								calories: 56,
-								protein: 12,
-								carbs: 0,
-								fiber: 0,
-								fat: 1,
-								cholesterol: 10,
-								sodium: 0,
-								potassium: 130,
-								sugar: 0,
-								vitaminA: 0,
-								vitaminC: 0,
-								calcium: 4,
-								iron: 1,
-								link: "https://www.myfitnesspal.com/food/calories/614695651"
-							},
+							// {
+							// 	name: "Grilled Shrimp",
+							// 	imageNumber: 6,
+							// 	servingSize: "5 shrimp / 2 oz",
+							// 	calories: 56,
+							// 	protein: 12,
+							// 	carbs: 0,
+							// 	fiber: 0,
+							// 	fat: 1,
+							// 	cholesterol: 10,
+							// 	sodium: 0,
+							// 	potassium: 130,
+							// 	sugar: 0,
+							// 	vitaminA: 0,
+							// 	vitaminC: 0,
+							// 	calcium: 4,
+							// 	iron: 1,
+							// 	link: "https://www.myfitnesspal.com/food/calories/614695651"
+							// },
 
 							{
 								name: "Hard-boiled Egg",
 								imageNumber: 2,
+								image: `egg.png`,
 								servingSize: "1 large",
 								calories: 78,
 								protein: 6,
@@ -155,6 +138,7 @@ const saladFixins = {
 							{
 								name: "Grilled Salmon",
 								imageNumber: 1,
+								image: `salmon.png`,
 								servingSize: "3 oz",
 								calories: 134,
 								protein: 11,
@@ -175,6 +159,7 @@ const saladFixins = {
 							{
 								name: "Feta Cheese",
 								imageNumber: 8,
+								image: "feta-cheese.png",
 								servingSize: "1/4 cup, crumbled",
 								calories: 99,
 								protein: 5,
@@ -200,6 +185,7 @@ const saladFixins = {
 							{
 								name: "Sweet Potato",
 								imageNumber: 7,
+								image: `sweet-potato.png`,
 								servingSize: "1/3 cup cubed",
 								calories: 54,
 								protein: 1,
@@ -220,7 +206,7 @@ const saladFixins = {
 							{
 								name: "Mushrooms",
 								imageNumber: 6,
-								image: "mushroom.png",
+								image: `mushroom.png`,
 								servingSize: "4 large",
 								calories: 20,
 								protein: 3,
@@ -241,6 +227,7 @@ const saladFixins = {
 							{
 								name: "Green Olives",
 								imageNumber: 6,
+								image: `green-olive.png`,
 								servingSize: "8 large",
 								calories: 60,
 								protein: 0,
@@ -261,6 +248,7 @@ const saladFixins = {
 							{
 								name: "Tomato Slices",
 								imageNumber: 5,
+								image: `tomato.png`,
 								servingSize: "6 slices",
 								calories: 18,
 								protein: 1,
@@ -278,50 +266,50 @@ const saladFixins = {
 								link: "https://www.myfitnesspal.com/food/calories/600632804"
 							},
 
-							{
-								name: "Strawberry Slices",
-								imageNumber: 6,
-								servingSize: "5 berries",
-								calories: 29,
-								protein: 1,
-								carbs: 7,
-								fiber: 2,
-								fat: 0,
-								cholesterol: 0,
-								sodium: 2,
-								potassium: 138,
-								sugar: 4,
-								vitaminA: 0,
-								vitaminC: 88,
-								calcium: 1,
-								iron: 2,
-								link: "https://www.myfitnesspal.com/food/calories/626167339"
-							},
+							// {
+							// 	name: "Strawberry Slices",
+							// 	imageNumber: 6,
+							// 	servingSize: "5 berries",
+							// 	calories: 29,
+							// 	protein: 1,
+							// 	carbs: 7,
+							// 	fiber: 2,
+							// 	fat: 0,
+							// 	cholesterol: 0,
+							// 	sodium: 2,
+							// 	potassium: 138,
+							// 	sugar: 4,
+							// 	vitaminA: 0,
+							// 	vitaminC: 88,
+							// 	calcium: 1,
+							// 	iron: 2,
+							// 	link: "https://www.myfitnesspal.com/food/calories/626167339"
+							// },
 
-							{
-								name: "Apple Cubes",
-								imageNumber: 5,
-								servingSize: "1/2 apple, cubed",
-								calories: 40,
-								protein: 0,
-								carbs: 15,
-								fiber: 2,
-								fat: 0,
-								cholesterol: 0,
-								sodium: 0,
-								potassium: 0,
-								sugar: 0,
-								vitaminA: 0,
-								vitaminC: 5,
-								calcium: 0,
-								iron: 1,
-								link: "https://www.myfitnesspal.com/food/calories/547373036"
-							},
+							// {
+							// 	name: "Apple Cubes",
+							// 	imageNumber: 5,
+							// 	servingSize: "1/2 apple, cubed",
+							// 	calories: 40,
+							// 	protein: 0,
+							// 	carbs: 15,
+							// 	fiber: 2,
+							// 	fat: 0,
+							// 	cholesterol: 0,
+							// 	sodium: 0,
+							// 	potassium: 0,
+							// 	sugar: 0,
+							// 	vitaminA: 0,
+							// 	vitaminC: 5,
+							// 	calcium: 0,
+							// 	iron: 1,
+							// 	link: "https://www.myfitnesspal.com/food/calories/547373036"
+							// },
 
 							{
 								name: "Red Onion",
 								imageNumber: 4,
-								image: `red-onion.png`
+								image: `red-onion.png`,
 								servingSize: "5 rings / 1/4 cup chopped",
 								calories: 12,
 								protein: 0,
@@ -342,6 +330,7 @@ const saladFixins = {
 							{
 								name: "Cucumber",
 								imageNumber: 4,
+								image: `cucumber.png`,
 								servingSize: "1/2 cup chopped",
 								calories: 6,
 								protein: 0,
@@ -380,25 +369,26 @@ const saladFixins = {
 								link: "https://www.myfitnesspal.com/food/calories/652050451"
 							},
 
-							// {
-							// 	name: "Black Olives",
-							// 	imageNumber: 7,
-							// 	servingSize: "2 tbsp / 15 g",
-							// 	calories: 25,
-							// 	protein: 0,
-							// 	carbs: 1,
-							// 	fiber: 1,
-							// 	fat: 2,
-							// 	cholesterol: 0,
-							// 	sodium: 126,
-							// 	potassium: 0,
-							// 	sugar: 0,
-							// 	vitaminA: 0,
-							// 	vitaminC: 0,
-							// 	calcium: 2,
-							// 	iron: 7,
-							// 	link: "https://www.myfitnesspal.com/food/calories/672006926"
-							// },
+							{
+								name: "Black Olives",
+								imageNumber: 5,
+								image: `black-olive.png`,
+								servingSize: "2 tbsp / 15 g",
+								calories: 25,
+								protein: 0,
+								carbs: 1,
+								fiber: 1,
+								fat: 2,
+								cholesterol: 0,
+								sodium: 126,
+								potassium: 0,
+								sugar: 0,
+								vitaminA: 0,
+								vitaminC: 0,
+								calcium: 2,
+								iron: 7,
+								link: "https://www.myfitnesspal.com/food/calories/672006926"
+							},
 
 							// {
 							// 	name: "Green Pepper",
@@ -443,6 +433,7 @@ const saladFixins = {
 							{
 								name: "Avocado",
 								imageNumber: 5,
+								image: `avocado.png`,
 								servingSize: "1/2 avocado",
 								calories: 161,
 								protein: 2,
@@ -463,6 +454,7 @@ const saladFixins = {
 							{
 								name: "Corn Kernels",
 								imageNumber: 12,
+								image: `corn.png`,
 								servingSize: "1/3 cup",
 								calories: 63,
 								protein: 2,
@@ -480,25 +472,25 @@ const saladFixins = {
 								link: "https://www.myfitnesspal.com/food/calories/513664080"
 							},
 
-							{
-								name: "Broccoli Florets",
-								imageNumber: 6,
-								servingSize: "1/3 cup, chopped",
-								calories: 10,
-								protein: 1,
-								carbs: 2,
-								fiber: 1,
-								fat: 0,
-								cholesterol: 0,
-								sodium: 10,
-								potassium: 95,
-								sugar: 1,
-								vitaminA: 4,
-								vitaminC: 45,
-								calcium: 1,
-								iron: 1,
-								link: "https://www.myfitnesspal.com/food/calories/425578799"
-							},
+							// {
+							// 	name: "Broccoli Florets",
+							// 	imageNumber: 6,
+							// 	servingSize: "1/3 cup, chopped",
+							// 	calories: 10,
+							// 	protein: 1,
+							// 	carbs: 2,
+							// 	fiber: 1,
+							// 	fat: 0,
+							// 	cholesterol: 0,
+							// 	sodium: 10,
+							// 	potassium: 95,
+							// 	sugar: 1,
+							// 	vitaminA: 4,
+							// 	vitaminC: 45,
+							// 	calcium: 1,
+							// 	iron: 1,
+							// 	link: "https://www.myfitnesspal.com/food/calories/425578799"
+							// },
 
 							{
 								name: "Fresh Peas",
@@ -545,7 +537,7 @@ const saladFixins = {
 							{
 								name: "Bluberries",
 								imageNumber: 8,
-								image: "blueberry.png",
+								image: `blueberry.png`,
 								servingSize: "1/4 cup",
 								calories: 13,
 								protein: 0,
@@ -589,6 +581,7 @@ const saladFixins = {
 							{
 								name: "Pumpkin Seeds",
 								imageNumber : 12,
+								image: `pumpkin-seed.png`,
 								servingSize : "2 tbsp",
 								calories : 145 ,
 								protein : 18,
@@ -629,6 +622,7 @@ const saladFixins = {
 							{
 								name: "Sunflower Seeds",
 								imageNumber: 12,
+								image: `sunflower-seed.png`,
 								servingSize: "2 tbsp",
 								calories: 130,
 								protein: 6,
@@ -669,6 +663,7 @@ const saladFixins = {
 							{
 								name: "Almonds",
 								imageNumber: 7,
+								image: `almond.png`,
 								servingSize: "12 almonds / 1/4 cup",
 								calories: 82,
 								protein: 3,
@@ -710,25 +705,26 @@ const saladFixins = {
 
 		// DRESSINGS
 	dressings: [
-								// {
-								// 	name: "Balsamic Vinaigrette",
-								// 	imageNumber: 1,
-								// 	servingSize: "3 tbsp",
-								// 	calories: 134,
-								// 	protein: 0,
-								// 	carbs: 3,
-								// 	fiber: 0,
-								// 	fat: 14,
-								// 	cholesterol: 0,
-								// 	sodium: 336,
-								// 	potassium: 0,
-								// 	sugar: 2,
-								// 	vitaminA: 0,
-								// 	vitaminC: 0,
-								// 	calcium: 0,
-								// 	iron: 0,
-								// 	link: "http://www.geniuskitchen.com/recipe/sheilas-best-balsamic-dressing-176016"
-								// },
+								{
+									name: "Balsamic Vinaigrette",
+									imageNumber: 0,
+									image: `balsamic-vinaigrette.png`,
+									servingSize: "3 tbsp",
+									calories: 134,
+									protein: 0,
+									carbs: 3,
+									fiber: 0,
+									fat: 14,
+									cholesterol: 0,
+									sodium: 336,
+									potassium: 0,
+									sugar: 2,
+									vitaminA: 0,
+									vitaminC: 0,
+									calcium: 0,
+									iron: 0,
+									link: "http://www.geniuskitchen.com/recipe/sheilas-best-balsamic-dressing-176016"
+								},
 
 								{
 									name: "Ranch",
@@ -754,7 +750,8 @@ const saladFixins = {
 
 								{
 									name: "Raspberry Vinaigrette",
-									imageNumber: 1,
+									imageNumber: 0,
+									image: `raspberry-vinaigrette.png`,
 									servingSize: "3 tbsp",
 									calories: 90,
 									protein: 0,
@@ -775,7 +772,8 @@ const saladFixins = {
 
 								{
 									name: "Green Goddess",
-									imageNumber: 1,
+									imageNumber: 0,
+									image: `green-goddess.png`,
 									servingSize: "2 tbsp",
 									calories: 96,
 									protein: 6,
@@ -813,6 +811,7 @@ const saladFixins = {
 									iron: 6,
 									link: "https://recipes.sparkpeople.com/recipe-calories.asp?recipe=1383969"
 								}
+
 ]
 
 }

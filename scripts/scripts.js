@@ -25,8 +25,10 @@ salad.getProtein = () => {
 	const proteinReturned = salad.getRandomItem(saladFixins.proteins);
 	// displays name
 	$('.ingreds__info--name--protein').html(`${proteinReturned.item.name}`);
+
 	//displays preview image
 	$(`.ingreds__img--protein`).attr(`src`, `assets/ingredients/preview/${proteinReturned.item.image}`);
+
 	// displays on salad
 	salad.displayOnSalad(proteinReturned.item);
 	//updates nutrition information
@@ -38,8 +40,8 @@ salad.getProtein = () => {
 salad.getCrunch = () => {
   const crunchReturned = salad.getRandomItem(saladFixins.crunch);
 	$('.ingreds__info--name--crunch').html(`${crunchReturned.item.name}`);
-	$(`.ingreds__img--crunch`).attr(`src`, `assets/ingredients/preview/${crunchReturned.item.image}`);
 
+	$(`.ingreds__img--crunch`).attr(`src`, `assets/ingredients/preview/${crunchReturned.item.image}`);
 
 	salad.displayOnSalad(crunchReturned.item);
 	salad.updateNutrition(crunchReturned.item);
@@ -52,6 +54,7 @@ salad.getDressing = () => {
 	$('.ingreds__info--name--dressing').html(`${dressingReturned.item.name}`);
 
 	$(`.ingreds__img--dressing`).attr(`src`, `assets/ingredients/preview/${dressingReturned.item.image}`);
+
 	salad.updateNutrition(dressingReturned.item);
 } 
 
@@ -64,7 +67,6 @@ salad.getVeg = () => {
 		$(`.ingreds__info--name--veg${i}`).html(`${vegReturned.item.name}`);
 		$(`.ingreds__img--veg${i}`).attr(`src`, `assets/ingredients/preview/${vegReturned.item.image}` );
 		availableVeg.splice(vegReturned.index, 1);
-
 
 		salad.displayOnSalad(vegReturned.item);
 		salad.updateNutrition(vegReturned.item);
@@ -119,7 +121,7 @@ salad.resetSalad = () => {
 
 	// resets tweet
 
-	$(`.tweet-form`).attr(`action`, `  `);
+	$(`.tweet-form`).attr(`action`, ` `);
 
 	//resets salad nutrition object
 	for(key in salad.saladNutrition){
@@ -134,9 +136,25 @@ salad.updateNutrition = (item) => {
 		salad.saladNutrition[key] += item[key];
 		$(`.input__${key}`).html(salad.saladNutrition[key]);
 	}
-
 	salad.itemsOnSalad.push(item.name);
 } 
+
+
+salad.tweetSalad = () => {
+
+	const tweetItem1 = salad.itemsOnSalad[0];
+	const tweetItem2 = salad.itemsOnSalad[1];
+	const tweetItem3 = salad.itemsOnSalad[2];
+
+	$(`.tweet-form`).attr(`action`, `https://twitter.com/intent/tweet?text=I%27m+eating+a+delicious+salad+with+${tweetItem1}%2C+${tweetItem2}%2C+and+${tweetItem3}%21+Generate+your+own+salad+at+Salad+Club%2C+made+by+%40fakelauralouise%21`);
+
+
+	console.log(tweetItem1, tweetItem2, tweetItem3);
+
+}
+
+
+
 
 salad.init = () => {
 
@@ -164,6 +182,8 @@ salad.init = () => {
 		salad.getDressing();
 
 		// generate salad tweet
+
+		salad.tweetSalad();
 
 	});
 

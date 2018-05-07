@@ -9,18 +9,13 @@ button{
   padding: 15px;
 	border-radius: 40px;
   font-size: 1.8rem;
-	margin: 30px;
+	margin: 15px 30px;
 	text-transform: uppercase;
 	min-width: 180px;
 }
 
 button:focus{
 	outline: none;
-}
-
-.btn-base{
-
-	
 }
 
 .btn-greens,
@@ -45,7 +40,7 @@ button:focus{
 .btn-base:hover{
 box-shadow: 4 4px #668bf1;
 top: 2px;
-
+transform: translateY(3px);
 }
 
 .btn-text{
@@ -65,7 +60,18 @@ top: 2px;
 
 .btn--generate{
 font-family: $heading;
-background-color: white
+background-color: white;
+font-size: 1.8rem;
+font-weight: bold;
+width: 200px;
+transition: all 0.3s ease-in-out;
+}
+
+.btn--generate:hover{
+	transform: translateY(3px);
+	background-color: $accent;
+	color: white;
+
 }
 
 .btn--tweet{
@@ -73,3 +79,8 @@ background-color: white
 	color: white;
 }
 
+.btn--tweet:hover{
+	background:white;
+	color: $accent;
+	transition: all 0.3s ease-in-out;
+}

@@ -8,10 +8,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	padding: 30px;
 	display:flex;
 
-	// @include mq(med){
-	// 	flex-direction: column;
-	// }
-
 
 	@media (max-width: 800px){
 		flex-direction: column;
@@ -28,7 +24,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	background: white;
 	border-radius: 50px;
 	box-shadow: 5px 5px 5px black;
-		@media (max-width: 00px){
+		@media (max-width: 800px){
 		width: 100%;
 	}
 
