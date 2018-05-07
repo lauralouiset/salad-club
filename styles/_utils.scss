@@ -6,29 +6,70 @@ UTILITIES
 // Button Styles
 
 button{
-  padding: 10px;
-  border-radius: 30px;
-  font-size: 1.5rem;
-  font-family: $sans;
-  text-transform: uppercase;
-  margin-bottom: 25px;
+  padding: 15px;
+	border-radius: 40px;
+  font-size: 1.8rem;
+	margin: 30px;
+	text-transform: uppercase;
+	min-width: 180px;
+}
+
+button:focus{
+	outline: none;
 }
 
 .btn-base{
-  width: 150px;
-  background-color: green;
+
+	
+}
+
+.btn-greens,
+.btn-kale{
+	background-color:white;
+	color: black;
+	border:none;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-greens:hover{
+	background-color: rgb(13, 141, 13);
+	color:white;
 
 }
 
-.btn-base:active{
-  background: darkgreen;
-  transition: background .3s ease-in-out
+.btn-kale:hover{
+	background-color: rgb(11, 48, 11);
+	color:white
 }
 
-.btn-mix{
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
+.btn-base:hover{
+box-shadow: 4 4px #668bf1;
+top: 2px;
+
 }
 
+.btn-text{
+	display: block;
+}
+
+.btn--cursive{
+	font-family: $cursive;
+	text-transform: lowercase;
+	font-size: 2rem;
+}
+
+.btn--sans{
+	font-family: $sans;
+
+}
+
+.btn--generate{
+font-family: $heading;
+background-color: white
+}
+
+.btn--tweet{
+	background: $accent;
+	color: white;
+}
 

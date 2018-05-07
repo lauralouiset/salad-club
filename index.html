@@ -5,318 +5,332 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" type="image/png" href="assets/icon-salad.png">
-  <link href="https://fonts.googleapis.com/css?family=Passion+One|Questrial|Raleway:400,600" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Passion+One|Questrial|Raleway:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+<script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR"
+ crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="styles/animate.css">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="scripts" href="scripts/scripts.js">
   <title>SALAD CLUB!</title>
 </head>
 <body>
-  <div class="wrapper">
+	<div class="wrapper">
 
-    <main>
-      <nav>
-        <ul class="header__nav">
-          <li>About</li>
-        </ul>
-
-        <ul class="socialmedia">
-          <li>Twitter</li>
-        </ul>
-
-      </nav>
-
-      <!-- SALAD SECTION -->
-      <main class="salad">
+					<!-- SALAD SECTION -->
+				<header class="salad">
 
 
-        <!-- SALAD IMAGE DISPLAY -->
-        <section class="salad__display">
-				
-					<!-- images go here -->
-					<div class="salad-bowl">
-						<img class="img-bowl" src="assets/bowl2.png" alt="Empty Salad Bowl">
+						<!-- SALAD IMAGE DISPLAY -->
+					<section class="salad__display">
+						
+							<!-- images go here -->
+							<div class="salad-bowl">
+								<img class="img-bowl" src="assets/bowl2.png" alt="Empty Salad Bowl">
 
-						<img data-base="greens" class="img-salad-base" src="assets/ingredients/greens.png" alt="spring greens">
-						<img data-base="kale" class="img-salad-base" src="" alt="baby kale">
-						<div class="salad-ingredients">
+								<img data-base="greens" class="img-salad-base" src="assets/ingredients/greens.png" alt="spring greens">
+								<img data-base="kale" class="img-salad-base" src="" alt="baby kale">
+								<div class="salad-ingredients">
+								</div>
+
+							</div>
+
+					</section>
+
+
+					<section class="salad__header">
+
+										<div class="header__main bounceInDown">
+											<h1 class="pulse header__main-text">Salad Club</h1>
+										</div>
+										
+										<h2 class="header__sub">Salad Generator</h2>
+										
+
+					<div class="salad__generator">
+						
+						<div class="salad__base__buttons">
+								<button type="button" data-base="greens" class=" btn-greens btn-base">
+									<span class="btn-text btn--cursive">make mine</span>
+									<span class="btn-text btn-sans">Spring Greens</span>
+								</button>
+
+								<button type="button" data-base="kale" class="btn-base btn-kale">
+									<span class="btn-text btn--cursive">make mine</span>
+								<span class="btn-text btn-sans">Baby Kale</span></button>
+					</div>
+
+					<div class="salad__header__mix">
+
+						<button type ="button" class="btn--generate">Generate My Salad!</button>
+					</div>
+
+					</div> 
+
+					</section>
+
+				</header>
+
+					<!-- YOUR SALAD INFO -->
+					<section class="saladInfo">
+
+
+						<div class="saladInfo__nutrition">
+
+							<div class="nutrition__display">
+								<h3 class="nutrition__headline">Nutrition Facts</h3>
+
+								<p class="nutrient__line thickBorder">
+									<span>Serving size: 1 Salad</span>
+								</p>
+
+								<p class="nutrient__line">Amount Per Serving</p>
+
+								<p class="nutrient__line medBorder">
+									<span>Calories</span>
+								<span>
+									<span class="input__calories">0</span>
+								</span>
+							</p>
+
+								<p class="nutrient__line">
+									<span class="nutrient">Protein</span>
+
+									<span>
+										<span class="input__protein">0</span>
+										<span>g</span>
+									</span>
+								</p>
+
+								<p class="nutrient__line">
+									<span class="nutrient">Carbohydrates</span>
+									<span>
+										<span class="input__carbs">0</span>
+										<span>g</span>
+									</span>
+								</p>
+
+								<p class="nutrient__line">
+									<span class="nutrient">Total Fat</span>
+
+									<span>
+										<span class="input__fat">0</span>
+										<span>g</span>
+									</span>
+								</p>
+
+
+								<p class="nutrient__line">
+									<span class="nutrient">Dietary Fiber</span>
+								
+									<span>
+										<span class="input__fiber">0</span>
+										<span>g</span>
+									</span>
+								</p>
+
+
+								<p class="nutrient__line">
+									<span class="nutrient">Sugar</span>
+								
+									<span>
+										<span class="input__sugar">0</span>
+										<span>g</span>
+									</span>
+								</p>
+
+
+								<p class="nutrient__line">
+									<span class="nutrient">Sodium</span>
+								
+									<span>
+										<span class="input__sodium">0</span>
+										<span>mg</span>
+									</span>
+								</p>
+
+								<p class="nutrient__line thickBorder">
+									<span class="nutrient">Potassium</span>
+								
+									<span>
+										<span class="input__potassium">0</span>
+										<span>mg</span>
+									</span>
+								</p>
+
+								<p class="dv">% DV*</p>
+
+								<p class="nutrient__line">
+									<span class="nutrient">Vitamin A</span>
+								
+									<span>
+										<span class="input__vitaminA">0</span>
+										<span>%</span>
+									</span>
+								</p>
+
+								<p>
+								<p class="nutrient__line">
+									<span class="nutrient">Vitamin C</span>
+								
+									<span>
+										<span class="input__vitaminC">0</span>
+										<span>%</span>
+									</span>
+								</p>
+
+								<p class="nutrient__line">
+									<span class="nutrient">Calcium</span>
+								
+									<span>
+										<span class="input__calcium">0</span>
+										<span>%</span>
+									</span>
+								</p>
+
+								<p class="nutrient__line medBorder">
+									<span class="nutrient">Iron</span>
+								
+									<span>
+										<span class="input__iron">0</span>
+										<span>%</span>
+									</span>
+								</p>
+
+								<p class="nutrient__disclaimer">* Daily Values are based on a 2000 calorie diet. Your daily values may be higher or lower depending on your calorie
+								needs.</p>
+
+							</div>
+
+						</div>
+							<div class="saladInfo__ingreds">
+								<h2 class="section__header">What's In Your Salad?</h2>
+
+									<div class="saladInfo--ingreds--container">
+									
+										<!-- PROTEIN-->
+										<div class="ingreds__item ingreds--protein">
+											<div class="ingreds__img ingreds__img--protein">
+												<img src="" alt="????">
+											</div>
+									
+											<div class="ingreds__info--text ingreds__info--text--protein">
+												<p class="ingreds__info--title ingreds__info--title">Protein</p>
+												<p class="ingreds__info--name ingreds__info--name--protein">
+												</p>
+									
+											</div>
+										</div>
+									
+										<!-- VEGETABLE ONE -->
+										<div class="ingreds__item ingreds--veg1">
+											<div class="ingreds__img">
+												<img class="ingreds__img--veg1" src="????" alt="????">
+											</div>
+									
+											<div class="ingreds__info--text ingreds__info--text--veg1">
+												<p class="ingreds__info--title ingreds__info--title--veg1">Vegetable</p>
+												<p class="ingreds__info--name ingreds__info--name--veg1"></p>
+											</div>
+										</div>
+									
+									
+										<!-- VEGETABLE TWO -->
+										<div class="ingreds__item ingreds--veg2">
+											<div class="ingreds__img">
+												<img class="ingreds__img--veg2" src="????" alt="????">
+											</div>
+									
+											<div class="ingreds__info--text ingreds__info--veg2">
+												<p class="ingreds__info--title ingreds__info--title--veg2">Vegetable</p>
+												<p class="ingreds__info--name ingreds__info--name--veg2"></p>
+											</div>
+										</div>
+									
+										<!-- VEGETABLE THREE -->
+										<div class="ingreds__item ingreds--veg3">
+											<div class="ingreds__img ">
+												<img class="ingreds__img--veg3" src="????" alt="????">
+											</div>
+									
+											<div class="ingreds__info--text ingreds__info--text--veg3">
+												<p class="ingreds__info--title ngreds__info--title--veg3">Vegetable</p>
+												<p class="ingreds__info--name ingreds__info--name--veg3"></p>
+											</div>
+										</div>
+									
+										<!-- CRUNCH -->
+										<div class="ingreds__item ingreds--crunch">
+											<div class="ingreds__img ingreds__img--crunch">
+												<img src="????" alt="????">
+											</div>
+									
+											<div class="ingreds__info--text ingreds__info--text--crunch">
+												<p class="ingreds__info--title">Crunch</p>
+												<p class="ingreds__info--name ingreds__info--name--crunch"></p>
+											</div>
+										</div>
+									
+										<!-- DRESSING -->
+										<div class="ingreds__item ingreds--dressing">
+											<div class="ingreds__img ingreds__img--dressing">
+												<img class src="????" alt="????">
+											</div>
+									
+											<div class="ingreds__info--text ingreds__info--text--dressing">
+												<p class="ingreds__info--title">Dressing</p>
+												<p class="ingreds__info--name ingreds__info--name--dressing"></p>
+											</div>
+										</div>
+									
+									</div>
+									<!-- ingredientsContainer ends -->
+							</div>
+
+					</section>
+					
+
+					<!-- ABOUT SALAD CLUB -->
+					<section class="about">
+
+						<div class="about__content">
+						
+							<h2 class="section__header">About Salad Club</h2>
+						
+							<p>Salad Club generates healthy salads with the click of a button!</p>
+						
+							<p>Salad Club was created by <a href="http://lauraloui.se">Laura-Louise Tobin</a> as a project for the Full-Time Front-End Development Bootcamp at <a href="http://hackeryou.com">Hacker You</a>. Salad Club was built using JavaScript and Jquery, and SCSS.</p>
+						
+							<p>Salad ingredient graphics were designed by yours truly in Adobe Illustrator and Photoshop. Salad leaf graphics are from
+								<a href="https://stock.adobe.com/contributor/205507654/ssstocker?load_type=author%26prev_url=detail">Adobe Stock</a>.</p>
+						
 						</div>
 
-					</div>
-
-        </section>
-
-
-
-
-      <section class="salad__content">
-
-                <div class="header__main">
-                  <h1 class="header__main-text">Salad Club</h1>
-                </div>
-                
-                <h2 class="header__sub">Salad Generator</h2>
-                
-
-      <div class="salad__info">
-
-        <h2>Pick Your Base</h2>
-
-        <div class="salad__base">
-            <button type="button" data-base="greens" class="btn-base">Spring Greens</button>
-            <button type="button" data-base="kale" class="btn-base">Baby Kale</button>
-            <button type="button" data-base="soba" class="btn-base">Soba Noodles</button>
-      </div>
-
-      <div class="salad__info--mix">
-        <h2>Click to generate your salad</h2>
-        <button type ="button" class="generate">Mix My Salad!</button>
-      </div>
-
-
-
-
-      <div class="salad__info--ingreds">
-
-        <!-- PROTEIN-->
-        <div class="ingreds__item ingreds--protein">
-          <div class="ingreds__img ingreds__img--protein">
-            <img src="" alt="????">
-          </div>
-
-          <div class="ingreds__info--text ingreds__info--text--protein">
-            <p class="ingreds__info--title ingreds__info--title">Protein</p>
-            <p class="ingreds__info--name ingreds__info--name--protein">
-            </p>
-
-          </div>
-        </div>
-
-        <!-- VEGETABLE ONE -->
-        <div class="ingreds__item ingreds--veg1">
-          <div class="ingreds__img">
-            <img class="ingreds__img--veg1" src="????" alt="????">
-          </div>
-        
-          <div class="ingreds__info--text ingreds__info--text--veg1">
-            <p class="ingreds__info--title ingreds__info--title--veg1">Vegetable One</p>
-            <p class="ingreds__info--name ingreds__info--name--veg1"></p>
-          </div>
-        </div>
-
-
-        <!-- VEGETABLE TWO -->
-        <div class="ingreds__item ingreds--veg2">
-          <div class="ingreds__img">
-            <img class="ingreds__img--veg2" src="????" alt="????">
-          </div>
-        
-          <div class="ingreds__info--text ingreds__info--veg2">
-            <p class="ingreds__info--title ingreds__info--title--veg2">Vegetable Two</p>
-            <p class="ingreds__info--name ingreds__info--name--veg2"></p>
-          </div>
-        </div>
-
-        <!-- VEGETABLE THREE -->
-        <div class="ingreds__item ingreds--veg3">
-          <div class="ingreds__img ">
-            <img class="ingreds__img--veg3" src="????" alt="????">
-          </div>
-        
-          <div class="ingreds__info--text ingreds__info--text--veg3">
-            <p class="ingreds__info--title ngreds__info--title--veg3">Vegetable Three</p>
-            <p class="ingreds__info--name ingreds__info--name--veg3"></p>
-          </div>
-        </div>
-
-        <!-- CRUNCH -->
-        <div class="ingreds__item ingreds--crunch">
-          <div class="ingreds__img ingreds__img--crunch">
-            <img src="????" alt="????">
-          </div>
-        
-          <div class="ingreds__info--text ingreds__info--text--crunch">
-            <p class="ingreds__info--title">Crunch</p>
-            <p class="ingreds__info--name ingreds__info--name--crunch"></p>
-          </div>
-        </div>
-
-        <!-- DRESSING -->
-        <div class="ingreds__item ingreds--dressing">
-          <div class="ingreds__img ingreds__img--dressing">
-            <img class src="????" alt="????">
-          </div>
-        
-          <div class="ingreds__info--text ingreds__info--text--dressing">
-            <p class="ingreds__info--title">Dressing</p>
-            <p class="ingreds__info--name ingreds__info--name--dressing"></p>
-          </div>
-        </div>
-
-      </div> <!-- ingredientsContainer ends -->
-
-      </div> <!-- salad info ends -->
-
-      </section>
-
-      </main>
-
-      <!-- ABOUT YOUR SALAD -->
-			<section class="about">
-
-
-				<div class="about__nutrition">
-
-					<div class="nutrition__display">
-						<h3>Nutrition Facts</h3>
-
-						<p class="thickBorder"><span>Serving size</span> <span>1 salad</span></p>
-
-						<p>amount per serving medBorder</p>
-						<p><span>Calories</span> <span class="input__calories">0</span></p>
-
-						<p>empty</p>
-
-						<p class="nutrient__line">
-							<span class="nutrient">Protein</span>
-
-							<span>
-								<span class="input__protein">0</span>
-								<span>g</span>
-							</span>
-						</p>
-
-						<p class="nutrient__line">
-							<span class="nutrient">Carbohydrates</span>
-							<span>
-								<span class="input__carbs">0</span>
-								<span>g</span>
-							</span>
-						</p>
-
-						<p class="nutrient__line">
-							<span class="nutrient">Total Fat</span>
-
-							<span>
-								<span class="input__fat">0</span>
-								<span>g</span>
-							</span>
-						</p>
-
-
-						<p class="nutrient__line">
-							<span class="nutrient">Dietary Fiber</span>
-						
-							<span>
-								<span class="input__fiber">0</span>
-								<span>g</span>
-							</span>
-						</p>
-
-
-						<p class="nutrient__line">
-							<span class="nutrient">Sugar</span>
-						
-							<span>
-								<span class="input__sugar">0</span>
-								<span>g</span>
-							</span>
-						</p>
-
-
-						<p class="nutrient__line">
-							<span class="nutrient">Sodium</span>
-						
-							<span>
-								<span class="input__sodium">0</span>
-								<span>mg</span>
-							</span>
-						</p>
-
-						<p class="nutrient__line">
-							<span class="nutrient">Potassium</span>
-						
-							<span>
-								<span class="input__potassium">0</span>
-								<span>mg</span>
-							</span>
-						</p>
-
-						<p><span>% DV*</span></p>
-
-						<p class="nutrient__line">
-							<span class="nutrient">Vitamin A</span>
-						
-							<span>
-								<span class="input__vitaminA">0</span>
-								<span>%</span>
-							</span>
-						</p>
-
-						<p>
-						<p class="nutrient__line">
-							<span class="nutrient">Vitamin C</span>
-						
-							<span>
-								<span class="input__vitaminC">0</span>
-								<span>%</span>
-							</span>
-						</p>
-
-						<p class="nutrient__line">
-							<span class="nutrient">Calcium</span>
-						
-							<span>
-								<span class="input__calcium">0</span>
-								<span>%</span>
-							</span>
-						</p>
-
-						<p class="nutrient__line medBorder">
-							<span class="nutrient">Iron</span>
-						
-							<span>
-								<span class="input__iron">0</span>
-								<span>%</span>
-							</span>
-						</p>
-
-						<p>* Percent Daily Values are based on a 2000 calorie diet. Your daily values may be higher or lower depending on your calorie
-						needs.</p>
-
-
-
-
-
-
-
-					</div>
-
-				</div>
-
-				<div class="about__content">
-
-					<h2>About Salad Club</h2>
+					<div class="about__tweet">
+						<h2 class="section__header">Tweet My Salad!</h2>
+						<p>Food always tastes better when you share!</p
+							><p> Click to share what's in your salad via Twitter!</p>
+							<form class="tweet-form" action="">
+						<button class="btn--tweet"type="submit">Tweet your Salad!</button>
+						</form>
 					
-					<p>Salad Club generates healthy salads with the click of a button!</p>
+					</div>
 
-					<p>Salad Club was created by Laura-Louise Tobin as a project for Hacker You's Full-Time Front-End Development Bootcamp. Salad Club was built using JavaScript and Jquery, </p>
-
-					<p>Salad ingredient graphics were designed in Adobe Illustrator and Photoshop. Salad leaf graphics are from <a href="https://stock.adobe.com/contributor/205507654/ssstocker?load_type=author&prev_url=detail">Adobe Stock</a>.</p>
-
-					<p>Share on twitter!</p>
-
-				</div>
-
-      </section>
+					</section>
 
 
-<footer>
-Built by Laura-Louise Tobin
+		<footer>
+		<span>Built by Laura-Louise, 2018</span>
+		<ul class="footer-nav">
+			<li>
+				<a href="mailto: lauralouisetobin@gmail.com"><i class="far fa-envelope"></i></a>
+			</li>
+			<li><a href="https://twitter.com/FakeLauraLouise"><i class="fab fa-twitter"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/laura-louise-tobin/"><i class="fab fa-linkedin-in"></i></a></li>
+		</ul>
+		</footer>
 
-</footer>
-
-    </div>  <!-- wrapper end -->
+	</div>  <!-- wrapper end -->
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

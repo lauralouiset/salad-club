@@ -2,6 +2,17 @@
 VARIABLES AND MIXINS
 ============================================ */
 
+/* ------------  COLORS  ------------ */
+
+$accent : cornflowerblue;
+
+/* ------------  FONTS  ------------ */
+
+$title: 'Passion One', cursive;
+$heading : 'Questrial', sans-serif;
+$cursive : 'Satisfy', cursive;
+$sans: 'Raleway', sans-serif;
+
 
 
 @mixin centerXY{
@@ -12,6 +23,7 @@ VARIABLES AND MIXINS
 
 @mixin sp-btw{
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 }
 
@@ -20,3 +32,39 @@ VARIABLES AND MIXINS
 
 /* ------------  RESPONSIVE MIXINS  ------------ */
 
+
+/* =========================================
+RESPONSIVE BREAKPOINTS
+============================================ */
+// Breakpoints 
+
+$sm: 600px;
+$med: 800px;
+$lg: 960px;
+$xl: 1200px;
+
+
+// Media Queries
+
+@mixin mq($break){
+    @if $break == 'sm'{
+		@media(max-width: $sm){
+		@content;
+			}
+  } 
+    @else if $break == 'med'{
+		@media(max-width: $med){
+		@content;
+	}
+    } 
+    @else if $break == 'lg'{
+		@media(max-width: $lg){
+		@content;
+			}
+    }
+    @else if $break == 'xl'{
+		@media(max-width: $xl){
+		@content;
+			}
+		}
+}

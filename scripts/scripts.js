@@ -18,6 +18,7 @@ salad.getRandomItem = (array) => {
 	};
 }
 
+salad.itemsOnSalad = [],
 
 // get random protein
 salad.getProtein = () => {
@@ -28,7 +29,9 @@ salad.getProtein = () => {
 	$(`.ingreds__img--protein`).attr(`src`, `assets/ingredients/preview/${proteinReturned.item.image}`);
 	// displays on salad
 	salad.displayOnSalad(proteinReturned.item);
+	//updates nutrition information
 	salad.updateNutrition(proteinReturned.item);
+
 } 
 
 // get crunch
@@ -36,8 +39,9 @@ salad.getCrunch = () => {
   const crunchReturned = salad.getRandomItem(saladFixins.crunch);
 	$('.ingreds__info--name--crunch').html(`${crunchReturned.item.name}`);
 	$(`.ingreds__img--crunch`).attr(`src`, `assets/ingredients/preview/${crunchReturned.item.image}`);
-	salad.displayOnSalad(crunchReturned.item);
 
+
+	salad.displayOnSalad(crunchReturned.item);
 	salad.updateNutrition(crunchReturned.item);
 
 } 
@@ -60,6 +64,7 @@ salad.getVeg = () => {
 		$(`.ingreds__info--name--veg${i}`).html(`${vegReturned.item.name}`);
 		$(`.ingreds__img--veg${i}`).attr(`src`, `assets/ingredients/preview/${vegReturned.item.image}` );
 		availableVeg.splice(vegReturned.index, 1);
+
 
 		salad.displayOnSalad(vegReturned.item);
 		salad.updateNutrition(vegReturned.item);
@@ -112,18 +117,25 @@ salad.resetSalad = () => {
 	//reset graphics on salad display
 	$('.salad-ingredients').html("");
 
+	// resets tweet
+
+	$(`.tweet-form`).attr(`action`, `  `);
+
+	//resets salad nutrition object
 	for(key in salad.saladNutrition){
 		salad.saladNutrition[key] = 0;
 		} 
 }
 
 // updates nutrition object and prints to page in table
+// this function runs inside each getItem function
 salad.updateNutrition = (item) => {
-	console.log(item);
 	for (key in salad.saladNutrition){
 		salad.saladNutrition[key] += item[key];
 		$(`.input__${key}`).html(salad.saladNutrition[key]);
 	}
+
+	salad.itemsOnSalad.push(item.name);
 } 
 
 salad.init = () => {
@@ -139,7 +151,7 @@ salad.init = () => {
 	});
 
 	// GENERATE SALAD BUTTON
-	$('.generate').on('click', function (e) {
+	$('.btn--generate').on('click', function (e) {
 		e.preventDefault();
 
 		//reset salad info & display
@@ -147,22 +159,15 @@ salad.init = () => {
 
 		//generate new salad
 		salad.getProtein();
+		salad.getVeg();
 		salad.getCrunch();
 		salad.getDressing();
-		salad.getVeg();
 
+		// generate salad tweet
 
-		
-		// write function generating new array with current salad ingredients
 	});
 
 } 
-
-
-
-// PREPOPULATED TWEET
-//https://twitter.com/intent/tweet?text=I+made+a+to+make+a+prepopulate+Twitter+status+thanks+to+@younoodle+younoodle.com+%23fun
-
 
 // DOCUMENT READY
 $(function () {

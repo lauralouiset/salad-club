@@ -2,24 +2,18 @@
 TYPOGRAPHY STYLES
 ============================================ */
 
-/* ------------  FONTS  ------------ */
-
-$title: 'Passion One', cursive;
-$heading : 'Questrial', sans-serif;
-$cursive : 'Satisfy', cursive;
-$sans: 'Raleway', sans-serif;
 
 
 /* ------------  BASE STYLES  ------------ */
 
 h1{
 font-family: $title;
-
 }
 
 h2{
 font-family: $cursive;
-font-size: 3rem;
+font-size: 4rem;
+margin: 30px;
   
 }
 
@@ -33,44 +27,47 @@ h4{
 }
 
 p{
-  font-family: $sans
+  font-family: $sans;
 }
 
+	a,
+	a:visited{
+		color: $accent;
+		transition: all .5s ease-in-out;
+	}
 
-// NAV
 
-nav ul{
-font-family: $sans;
-color: white;
-}
-
-// SALAD CLUB HEADER STYLES -- FUN BOUNCE
+// SALAD CLUB HEADER STYLES
 
 .header__main{
   text-align: center;
   text-transform: uppercase;
-  font-size: 7.0rem;
-  position: relative;
   color:white;
   letter-spacing: 2px;
 }
 
 .header__main-text{
-	margin: 20px 0;
-	text-shadow: 5px 5px 5px cornflowerblue;
+	margin: 30px 0;
+	text-shadow: 10px 10px 2px cornflowerblue;
+	font-size: 15.0rem;
+	letter-spacing: 10px;
 }
 
 .header__sub{
-  margin: 10px 0;
-  font-size: 4.0rem;
+	color: white;
+	margin: 0;
+	font-size: 5.0rem;
+	text-shadow: 5px 5px 2px cornflowerblue;
 }
 
-
+.section__header{
+	text-align: center;
+}
 
 /* ------------  SALAD DISPLAY INFO  ------------ */
 
-.ingreds__info--text p{
-  margin: 10px 0px 10px 0px;
+.ingreds__info--text{
+  margin-left: 30px;
   text-align: left;
 }
 
@@ -82,19 +79,44 @@ color: white;
 
 .ingreds__info--name{
   font-size: 1.6rem;
-
 }
 
 
 
 /* ------------  NUTRITION SECTION  ------------ */
 
-//NUTRITION DISPLAY GRID
-
-.nutrient{
-	font-weight: 700;
+.nutrition__headline{
+	font-size: 3.2rem;
+	margin: 15px 0;
 }
 
+.nutrient__line{
+	@include sp-btw;
+	border-bottom: 1px solid black;
+	margin: 0;
+	padding: 5px;
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+.dv{
+	text-align: right;
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin: 5px 0;
+}
+
+.nutrient__disclaimer{
+	padding: 0 5px;
+	font-size:1.2rem;
+}
+
+
+/* ------------  ABOUT  ------------ */
+
+.about__content p,
+.about__tweet p{
+		font-size: 1.6rem;
+}
 
 
 /* ------------  FOOTER  ------------ */
@@ -103,3 +125,21 @@ footer{
 	color: white;
 	font-family: $sans;
 }
+
+footer a{
+	color: white;
+	transition: all .5s ease-in-out;
+}
+
+.fa-twitter,
+.fa-linkedin-in{
+	color:white;
+	transition: all .5s ease-in-out;
+}
+
+a:hover,
+.fa-twitter:hover,
+.fa-linkedin-in:hover{
+	color: rgb(74, 209, 126);
+}
+

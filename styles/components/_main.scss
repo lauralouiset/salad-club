@@ -2,43 +2,19 @@
 SALAD CLUB TOP SECTION
 ============================================ */
 
-main{
-  height: 100vh;
+.salad{
+	height: calc(100vh - 30px);
+	min-height: 700px;
   background: url(../assets/background-wood.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+	background-size: cover;
+	  display:flex;
 
-}
-
-/* ------------  NAV BAR  ------------ */
-
-nav{
-  display: flex;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.header__nav{
-  display: flex;
-  justify-content: space-between;
-
-  ul li{
-    padding: 10px;
-  }
-}
-
-
-/* =========================================
-SALAD SECTION
-============================================ */
-
-
-.salad{
-  display:flex;
 }
 
 /* ------------  SALAD DISPLAY  ------------ */
 
-.salad__display,{
+.salad__display{
 	width: 50%;
 	position: relative;
 	@include centerXY;
@@ -46,18 +22,18 @@ SALAD SECTION
 
 .salad-bowl{
 	position: relative;
-	border: 1px solid hotpink;
-	padding: 30px;
+	width: 90%;
 }
 
 .img-bowl{
 	width: 100%;
+	height: auto;
 }
 
 .img-salad-base{
 	position:absolute;
-	top:5%;
-	left: 5%;
+	top:7%;
+	left: 8%;
 	width: 80%;
 	visibility:hidden;
 	z-index: 5;
@@ -86,44 +62,15 @@ SALAD SECTION
 
 /* ------------  SALAD INFO  ------------ */
 
-.salad__content{
+.salad__header{
   width: 50%;
-  text-align: center;
+	@include centerXY;
+	flex-flow: column nowrap;
+	text-align: center;
 }
 
-.salad__base{
+.salad__base__buttons{
   display:flex;
   justify-content: center;
 }
 
-// SELECTED INGREDIENTS 
-
-
-.salad__info--ingreds{
-  margin: 20px;
-  display:flex;
-  flex-flow: row wrap;
-}
-
-.ingreds__item{
-  // margin: 5px;
-  background: white;
-  width: 48%;
-  border: 2px solid black;
-  padding: 10px;
-  display: flex;
-}
-
-.ingreds__img{
-  border: 1px solid black;
-  width: 75px;
-	height: 75px;
-	& img{
-		width: 100%;
-		height: auto;
-	}
-}
-
-.ingreds__info--text{
-margin-left: 20px;
-}
