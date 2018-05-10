@@ -75,7 +75,7 @@ const saladFixins = {
 
 							{
 								name: "Brown Lentils",
-								imageNumber: 4,
+								imageNumber: 12,
 								image: "lentil.png",
 								servingSize: "1/4 cup",
 								calories: 80,

@@ -122,7 +122,8 @@ salad.resetSalad = () => {
 	// resets tweet
 
 	$(`.tweet-form`).attr(`action`, ` `);
-
+	salad.itemsOnSalad = []
+	
 	//resets salad nutrition object
 	for(key in salad.saladNutrition){
 		salad.saladNutrition[key] = 0;
@@ -146,15 +147,12 @@ salad.tweetSalad = () => {
 	const tweetItem2 = salad.itemsOnSalad[1];
 	const tweetItem3 = salad.itemsOnSalad[2];
 
-	$(`.tweet-form`).attr(`action`, `https://twitter.com/intent/tweet?text=I%27m+eating+a+delicious+salad+with+${tweetItem1}%2C+${tweetItem2}%2C+and+${tweetItem3}%21+Generate+your+own+salad+at+Salad+Club%2C+made+by+%40fakelauralouise%21`);
+	$(`.tweet-form`).attr(`action`,`http://twitter.com/home?status=I%27m+eating+a+delicious+salad+with+${tweetItem1}%2C+${tweetItem2}%2C+and+${tweetItem3}%21+Generate+your+own+salad+at+Salad+Club%2C+made+by+%40fakelauralouise%21`);
 
 
 	console.log(tweetItem1, tweetItem2, tweetItem3);
 
 }
-
-
-
 
 salad.init = () => {
 

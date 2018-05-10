@@ -3,11 +3,12 @@ SALAD CLUB TOP SECTION
 ============================================ */
 
 .salad{
-	height: calc(100vh - 30px);
-	min-height: 700px;
+	// height: calc(100vh - 30px);
+	// min-height: 700px;
   background: url(../assets/background-wood.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
 	display:flex;
 	@include mq(med){
 		flex-flow: column nowrap;
