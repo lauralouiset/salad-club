@@ -92,7 +92,7 @@ salad.displayOnSalad = (object) => {
 
 	for(i = 0; i < object.imageNumber; i++){
 
-		$('.salad-ingredients').append(`<img class="displayOnSalad" src="assets/ingredients/${object.image}" alt="${object.name}" style="top:${randomY()}%; left: ${randomX()}%; transform:rotate(${randomRotate()}deg);">`);
+		$('.salad-ingredients').append(`<img class="displayOnSalad" src="assets/ingredients/${object.image}" alt="${object.name}" style="width: ${object.width}%; top:${randomY()}%; left: ${randomX()}%; transform:rotate(${randomRotate()}deg);">`);
 	}
 } 
 
@@ -150,7 +150,7 @@ salad.tweetSalad = () => {
 	$(`.tweet-form`).attr(`action`,`http://twitter.com/home?status=I%27m+eating+a+delicious+salad+with+${tweetItem1}%2C+${tweetItem2}%2C+and+${tweetItem3}%21+Generate+your+own+salad+at+Salad+Club%2C+made+by+%40fakelauralouise%21`);
 
 
-	console.log(tweetItem1, tweetItem2, tweetItem3);
+	// console.log(tweetItem1, tweetItem2, tweetItem3);
 
 }
 
