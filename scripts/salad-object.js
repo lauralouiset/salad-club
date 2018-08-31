@@ -26,7 +26,7 @@ const saladFixins = {
 								vitaminA: 65,
 								vitaminC: 25,
 								calcium: 3,
-								iron: 8,
+								iron: 9,
 								link: "https://www.myfitnesspal.com/food/calories/667635279"
 							},
 							{
