@@ -2,8 +2,6 @@
 // THE SALAD OBJECT
 // 
 
-
-
 const saladFixins = {
 	
 	// GREENS
@@ -12,7 +10,6 @@ const saladFixins = {
 								name: "Spring Greens",
 								image: `assets/ingredients/base/greens`,
 								imageNumber: 1,
-								imageSize: x,
 								servingSize: "1 1/2 cups",
 								calories: 8,
 								protein: 0,
