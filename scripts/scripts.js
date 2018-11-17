@@ -92,7 +92,7 @@ salad.displayOnSalad = (object) => {
 
 	for(i = 0; i < object.imageNumber; i++){
 
-		$('.salad-ingredients').append(`<img class="displayOnSalad" src="assets/ingredients/${object.image}" alt="${object.name}" style="width: ${object.width}%; top:${randomY()}%; left: ${randomX()}%; transform:rotate(${randomRotate()}deg);">`);
+		$('.salad-ingredients').append(`<img class="displayOnSalad" src="assets/ingredients/${object.image}" alt="${object.name}" style="width: ${object.imageSize}%; top:${randomY()}%; left: ${randomX()}%; transform:rotate(${randomRotate()}deg);">`);
 	}
 } 
 
