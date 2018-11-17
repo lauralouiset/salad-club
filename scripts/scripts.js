@@ -78,11 +78,11 @@ salad.getVeg = () => {
 
 salad.displayOnSalad = (object) => {
 	const randomX = () => {
-		x = Math.floor((Math.random() * 50) + 25);
+		x = Math.floor((Math.random() * 50) + 20);
 		return x;
 	} 
 	const randomY = () => {
-		y = Math.floor((Math.random() * 50) + 25);
+		y = Math.floor((Math.random() * 50) + 15);
 		return y;
 	} 
 	const randomRotate = () => {
